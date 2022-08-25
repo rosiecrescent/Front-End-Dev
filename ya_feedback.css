@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Gelsaio;
+    src: url(../Fonts/Gelasio-Regular.ttf) format('truetype');
+}
+
+/*
+   FED CA2: Website
+   
+   CSS Style Sheet for ya_feedback.html
+   Purpose: To apply styles for Feedback Page
+
+   Name: Yadanar Aung
+   Admin No: P2214621
+   Class: DAAA/FT/1A/02
+
+   Filename: ya_feedback.css
+
+   Last Updated Date: 7 August 2022
+
+*/
+
+/*Header Styles*/
+#headerImage {
+    background-image: url(../Graphics/ya_bg4.jpeg);
+    /*source: myself*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Figure Styles*/
+figure {
+    border: 1px solid #b0d2cb;
+    border-left-width: 10px;
+    color: #0b4237;
+    box-shadow: 7px 11px #888888;
+}
+
+/*Blockquote Styles*/
+blockquote::before {    
+    content: "\201C";
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #009578;
+}
+
+/*Blockqoute Quote Styles*/
+.blockquote {
+    font-family: 'Gelsaio', serif;
+}
+
+/*Form Background Styles*/
+#form {
+    background-image: linear-gradient(#e0ecde, #7cc5b3);
+}
+
+/* Form Submit & Cancel Button Styles */
+button[type="submit"], button[type="reset"] {
+    background: linear-gradient(#f98267,#f3f8ba);
+}
+ 
+button[type="submit"]:hover {
+    background: linear-gradient(#6fc467,#e1eb75);
+}
+
+button[type="reset"]:hover {
+    background: linear-gradient(#ff5a36,#e1eb75);
+}

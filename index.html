@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+        FED CA2
+        Page 1: About Me(HomePage)
+        Purpose: Information About My Personality, Interest & Values
+        
+        Name: Yadanar Aung
+        Admin No: P2214621
+        Class: DAAA/FT/1A/02
+
+        Filename: index.html
+
+        Last Updated Date: 7 August 2022
+-->
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="keywords" content="Yadanar Aung, Yadanar" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Yadanar Aung</title>
+    <link href="Graphics/ya_logo.png" rel="icon">
+    <!--Source: Canva-->
+
+    <!--Bootsrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Boostrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--CSS Style Sheet-->
+    <link href="CSS/ya_base.css" rel="stylesheet">
+    <link href="CSS/ya_homePage.css" rel="stylesheet">
+
+    <!--Javascript Style Sheet-->
+    <script src="JavaScript/ya_base.js" defer></script>
+    <script src="JavaScript/ya_homePage.js" defer></script>
+
+    <!--Javascripts Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body onload="OnLoad()">
+
+    <header id="top">
+        <!--Responsive Horizontal Navigation-->
+        <nav class="navbar navbar-expand-lg p-2 navbar-dark bg-success fixed-top">
+
+            <!--container wrapper-->
+            <div class="container-fluid px-4 fs-6">
+
+                <!--my logo-->
+                <a class="navbar-brand" href="index.html">
+                    <img id="yalogo" class="pe-3 rounded-circle" src="Graphics/ya_logo.png" alt="Yadanar Aung">Yadanar Aung
+                </a>
+
+                <!--toggle button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapisble wrapper-->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!--left links-->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded" href="index.html">About
+                                Me</a></li>
+
+                        <!-- Navbar dropdown -->
+                        <li class="nav-item dropdown py-auto">
+                            <a class="nav-link dropdown-toggle text-light rounded" href="HTML/ya_SPLife.html"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Experience
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu fade-down" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="HTML/ya_SPLife.html#DAAA_1A_02">DAAA/1A/02
+                                        &#9825;</a></li>
+
+                                <li><a class="dropdown-item" href="HTML/ya_SPLife.html#timetable">Timetable</a></li>
+
+                                <li><a class="dropdown-item" href="HTML/ya_SPLife.html#favFC">Favorite Food Courts</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="HTML/ya_SPLife.html#CCA">My CCAs</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li><a class="dropdown-item" href="HTML/ya_SPLife.html#SOC_Diplomas">SOC Diplomas</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded"
+                                href="HTML/ya_careerProspects.html">Career Prospects</a></li>
+
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded"
+                                href="HTML/ya_feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Background Header Image-->
+        <div id="headerImage" class="mt-4 p-5">
+            <div class="text-center">
+                <p
+                    class="d-inline-flex border border-danger border-4 rounded-circle p-5 my-4 bg-light fs-3 fw-bold text-success">
+                    Hi! I'm Yadanar Aung</p>
+                <p class="lead text-white">DAAA Student @ SP</p>
+                <a class="btn btn-lg btn-light fw-bold text-success" href="#aboutMe">Let's Start Exploring!</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Introduction Section-->
+    <section id='aboutMe' class="container">
+        <p id="typingEffect" class="h1 text-uppercase text-danger fw-bold text-center mb-5 mt-5"></p>
+        <div class="row d-flex flex-wrap justify-content-center mt-5 mb-5 p-5 shadow-lg rounded">
+            <img id="profile" src="Graphics/profilePic.png" alt="Profile Picture" class="img-fluid col-md-5 mb-4 me-4">
+            <!--Source of profile picture: Myself-->
+            <!--Bootstrap Card-->
+            <div class="card col-md-6 offset-md-1 p-0 ms-0 bg-success font-monospace">
+                <div class="card-header text-uppercase text-light">Name: Yadanar Aung</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Singapore Polytechnic Year 1 Student</li>
+                    <li class="list-group-item">Diploma Course: Applied AI & Analytics</li>
+                    <li class="list-group-item">Nationality: Burmese</li>
+                </ul>
+                <div class="card-footer text-light text-end">- My Personal Details</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section for My Personality-->
+    <section class='alternateBg shadow-lg'>
+        <h1 class="text-uppercase text-danger fw-bold text-center pt-5">My Personality</h1>
+        <div class="row p-5 d-flex align-items-center">
+            <img class="d-flex offset-md-1 col-md-3 img-fluid img-thumbnail mb-md-0 mb-5"
+                src="Graphics/personality_logo.png" alt="My personality">
+            <!--Source of Personality Logo: 16 Personalites Website URL:https://www.16personalities.com/personality-types-->
+
+            <!--Description about personality-->
+            <div class="ms-0 ms-md-5 col-md-7">
+                <h1 class="text-md-start text-center fw-bold text-success">ISFP</h1>
+                <p class="lh-sm text-center text-md-start">According to the 16 Personalities,
+                    <br>I am someone with <strong>Introverted</strong>, <strong>Observant</strong>,
+                    <strong>Feeling</strong>, & <strong>Judging</strong> personality traits.
+                    <br><br>I enjoy helping & understanding others, while also sharing my knowledge.
+                    <br><br>I believe that being thoughtful & helping others will bring positive energy into one's
+                    life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section for My Interest-->
+    <section id="interest" class="shadow-lg pt-5 pb-5">
+        <div class="text-center">
+            <h1 class="badge rounded-pill p-3 mt-5 mb-4 bg-light fs-3 fw-bold text-uppercase text-danger">My Interests
+            </h1>
+        </div>
+
+        <!--Row-->
+        <div class="row mt-5 text-center">
+
+            <!--1st Column for Photograhpy-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img class="img-fluid w-75 d-flex align-top mx-auto shadow-lg" src="Graphics/interest_logo.png"
+                    alt="Photography" />
+                <!--Source: myself-->
+                <h4 class="text-center fw-bold pb-1 pt-4">Photography</h4>
+
+                <!--Button to open Modal-->
+                <button type="button" class="btn btn-outline-danger mb-5 bg-danger text-white" data-bs-toggle="modal"
+                    data-bs-target="#photographyModal">> read more</button>
+
+                <!-- The Modal -->
+                <div id="photographyModal" class="modal fade">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-danger">
+                                <h2 class="modal-title fw-bold text-white">Photography</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body pb-5">
+                                <p>I love looking at sceneries & capturing them as beautiful memories.
+                                    <br> Not only are they pleasing to the eye, but it shows the beauty of nature around
+                                    us.
+                                    <br>I joined my secondary school's infocomm club to learn more about the DSLR
+                                    camera,<br> in order to better capture such sceneries.
+                                    <br>Sometimes I wish we could take a screenshoot of the view with our eyes.
+                                </p>
+                                <div class="alert alert-primary d-inline-flex" role="alert">
+                                    Below are some pictures taken by me :)&nbsp;<strong>&#8628;</strong>
+                                </div>
+
+                                <!--Image Carousel-->
+                                <div id="photography" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#photography" data-bs-slide-to="0"
+                                            class="active"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="4"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="5"></button>
+                                        <button type="button" data-bs-target="#photography"
+                                            data-bs-slide-to="6"></button>
+                                    </div>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner ">
+                                        <div class="carousel-item active">
+                                            <img src="Graphics/photo1.jpeg" alt="First Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo2.jpeg" alt="Second Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo3.jpeg" alt="Third Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo4.jpeg" alt="Fourth Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo5.jpeg" alt="Fifth Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo6.jpeg" alt="Sixth Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Graphics/photo7.jpeg" alt="Seventh Slide" class="m-1">
+                                            <!--Source: myself-->
+                                        </div>
+                                    </div>
+
+                                    <!-- Left & right controls -->
+                                    <a class="carousel-control-prev" data-bs-target="#photography" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </a>
+
+                                    <a class="carousel-control-next" data-bs-target="#photography" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--2nd Column for Hiking-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img class="img-fluid w-75 d-flex align-top mx-auto shadow-lg" src="Graphics/hiking_logo.jpg"
+                    alt="Hiking" />
+                <!--Source: myself-->
+                <h4 class="text-center fw-bold pb-1 pt-4">Hiking</h4>
+
+                <!--Button to open Modal-->
+                <button type="button" class="btn btn-outline-danger mb-5 bg-danger text-white" data-bs-toggle="modal"
+                    data-bs-target="#hikingModal">> read more</button>
+
+                <!-- The Modal -->
+                <div id="hikingModal" class="modal fade">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-danger">
+                                <h2 class="modal-title fw-bold text-white">Hiking</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body pb-5">
+                                <p>I enjoy exploring as I love finding new places and new activities to do.
+                                    <br>Hiking is a great way to not only explore nature, but also to take a break from
+                                    city life.
+                                </p>
+                                <div class="alert alert-primary d-inline-flex" role="alert">
+                                    Below are some pictures of me hiking:)&nbsp;<strong>&#8628;</strong>
+                                </div>
+
+                                <!--Image Carousel-->
+                                <div id="hiking" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#hiking" data-bs-slide-to="0"
+                                            class="active"></button>
+                                        <button type="button" data-bs-target="#hiking" data-bs-slide-to="1"></button>
+                                    </div>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Graphics/hiking1.jpeg" alt="First Slide" class="m-1">
+                                            <!--Source: myself-->
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p class="text-danger"><mark>@ Railway Corridor</mark></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="Graphics/hiking2.jpeg" alt="Second Slide" class="m-1">
+                                            <!--Source: myself-->
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p class="text-danger"><mark>@ MacRitchie Reservoir</mark></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Left & right controls -->
+                                    <a class="carousel-control-prev" data-bs-target="#hiking" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </a>
+
+                                    <a class="carousel-control-next" data-bs-target="#hiking" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--3rd Column for Grocery Shopping-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mx-md-auto">
+                <img class="img-fluid w-75 d-flex align-top mx-auto shadow-lg" src="Graphics/grocery_logo.jpg"
+                    alt="Grocery Shopping" />
+                <!--Source: Myself-->
+                <h4 class="text-center fw-bold pb-1 pt-4">Grocery Shopping</h4>
+
+                <!--Button to Open Modal-->
+                <button type="button" class="btn btn-outline-danger mb-5 bg-danger text-white" data-bs-toggle="modal"
+                    data-bs-target="#groceryModal">> read more
+                </button>
+
+                <!--The Modal-->
+                <div id="groceryModal" class="modal fade">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-danger">
+                                <h2 class="modal-title fw-bold text-white">Grocery Shopping</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body pb-5">
+                                <p>Sounds like a weird interest right?<br>However, I find it fascinating how people can
+                                    decide on what groceries to buy for the week.
+                                    <br>I also like following my parents along when they go for a grocery run,<br>cause
+                                    it's a nice time to just relax & spend time with them.
+                                </p>
+                                <div class="alert alert-primary d-inline-flex" role="alert">
+                                    Below are some pictures of us heading out for a grocery run
+                                    :)&nbsp;<strong>&#8628;</strong>
+                                </div>
+
+                                <!--Image Carousel-->
+                                <div id="grocery" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!-- Indicators -->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#grocery" data-bs-slide-to="0"
+                                            class="active"></button>
+                                        <button type="button" data-bs-target="#grocery" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#grocery" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#grocery" data-bs-slide-to="3"></button>
+                                    </div>
+
+                                    <!-- The slideshow -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="d-flex justify-content-center"><img src="Graphics/grocery1.jpeg"
+                                                    alt="First Slide" class="m-1">
+                                                <!--source: myself-->
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex justify-content-center"><img src="Graphics/grocery2.jpeg"
+                                                    alt="Second Slide" class="m-1"></div>
+                                            <!--source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex justify-content-center"><img src="Graphics/grocery3.jpeg"
+                                                    alt="Third Slide" class="m-1"></div>
+                                            <!--source: myself-->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex justify-content-center"><img src="Graphics/grocery4.jpeg"
+                                                    alt="Last Slide" class="m-1"></div>
+                                            <!--source: myself-->
+                                        </div>
+                                    </div>
+
+                                    <!-- Left & right controls -->
+                                    <a class="carousel-control-prev" data-bs-target="#grocery" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </a>
+
+                                    <a class="carousel-control-next" data-bs-target="#grocery" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section for Favorite Quotes-->
+    <section class='alternateBg shadow-lg py-5'>
+        <h1 class="text-uppercase text-danger fw-bold text-center py-3">Favorite Quotes</h1>
+        <div class="container-fluid row d-flex justify-content-evenly align-items-center mx-1">
+            <!--Figure Box-->
+            <figure class="col-md-4 text-center bg-light mb-5">
+                <blockquote class="blockquote p-2">
+                    <p><strong>Today's Efforts, Tomorrow's Rewards</strong></p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Pritpal Kaur
+                </figcaption>
+            </figure>
+
+            <!--Figure Box-->
+            <figure class="col-md-4 text-center bg-light">
+                <blockquote class="blockquote p-2">
+                    <p><strong>Expect Disappointment & you won't be disappointed</strong></p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    MJ from <cite title="Source Title">Spider-Man</cite>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!--Section for My Values-->
+    <section class="shadow-lg pb-3 pt-4">
+        <h1 class="text-uppercase text-danger fw-bold text-center pt-5">My Values</h1>
+        <div class="row p-5 d-flex align-items-center">
+            <img class="d-flex img-fluid offset-md-1 col-md-3 img-fluid mb-md-0 mb-4" src="Graphics/values_logo.png"
+                alt="My Core Values">
+            <!--Source of Values Logo: VectorStock URL:https://www.vectorstock.com/royalty-free-vector/core-values-vector-17651186-->
+            <div class="ms-0 ms-md-5 col-md-7">
+                <p class="h1 text-md-start text-center fw-bold text-success pb-1">Core Values</p>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item mb-3"><strong>Excellence</strong>
+                        <p class="lh-sm"><br>I value putting in hard work & effort to achieve one's dreams & I believe
+                            that people
+                            should not just do the bare minimum, but to explore beyond their limits.</p>
+                    </li>
+                    <li class="list-group-item"><strong>Growth mindset</strong>
+                        <p class="lh-sm"><br>Everyone has the ability to improve as long as efforts are consistent &
+                            feedbacks are openly accpeted.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Return to Top-->
+    <div class="container">
+        <div class="fixed-bottom m-4">
+            <a href="#top" class="bg-light rounded-circle p-2 d-block" id="return">
+                <!--arrow up SVG for icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!--Horizontal footer-->
+    <footer class="bg-danger text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <h2 class="h6 mb-4 fw-bolder text-uppercase">Contact Information:</h2>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="mailto:yadanarraung27@gmail.com" role="button" target="blank"><i class="bi bi-google"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://www.linkedin.com/in/yadanar-aung-0b952323a/" role="button" target="blank"><i
+                        class="bi bi-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://github.com/rosiecrescent" role="button" target="blank"><i
+                        class="bi bi-github"></i></a>
+
+                <!-- Discord -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://discordapp.com/users/419120467463634955/" role="button" target="blank"><i
+                        class="bi bi-discord"></i></a>
+
+                <!-- Telegram -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2" href="https://t.me/ydnrvely"
+                    role="button" target="blank"><i class="bi bi-telegram"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://www.instagram.com/ydnrvely" role="button" target="blank"><i
+                        class="bi bi-instagram"></i></a>
+            </section>
+        </div>
+
+        <p>
+            <i class="btn btn-outline-light bi bi-telephone me-4 mb-2" onclick="copyPhoneNumber()"> +65 9296 4443</i>
+            <a class='btn btn-outline-light mb-2' href="mailto:yadanar.22@ichat.sp.edu.sg">
+                <i class="bi bi-microsoft-teams mb-2">yadanar.22&#64;ichat.sp.edu.sg</i>
+            </a>
+        </p>
+
+        <!-- Copyright -->
+        <div id="copyright" class="p-3">
+            <p class="mb-0 text-uppercase"> &#169; 2022 Yadanar Aung</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
