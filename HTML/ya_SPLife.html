@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+        FED CA2: Website
+        Page 2: SP Life
+        Purpose: Information abt my Class, CCA & SOC in SP
+
+        Name: Yadanar Aung
+        Admin No: P2214621
+        Class: DAAA/FT/1A/02
+
+        Filename: ya_SPLife.html 
+
+        Last Updated Date: 7 August 2022
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Yadanar Aung, Yadanar" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>SP Experience</title>
+    <link href="../Graphics/ya_logo.png" rel="icon">
+    <!--Source: Canva-->
+
+    <!--Bootsrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Boostrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--CSS Style Sheet-->
+    <link href="../CSS/ya_base.css" rel="stylesheet">
+    <link href="../CSS/ya_SPLife.css" rel="stylesheet">
+
+    <!--Javascript Script-->
+    <script src="../JavaScript/ya_base.js" defer></script>
+    <script src="../JavaScript/ya_SPLife.js" defer></script>
+
+    <!--Javascripts Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body onload="OnLoad()">
+
+    <header id="top">
+        <!--Responsive Horizontal Navigation-->
+        <nav class="navbar navbar-expand-lg p-2 navbar-dark bg-success fixed-top">
+
+            <!--container wrapper-->
+            <div class="container-fluid px-4 fs-6">
+
+                <!--my logo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img id="yalogo" class="pe-3 rounded-circle" src="../Graphics/ya_logo.png" alt="Yadanar Aung">Yadanar Aung
+                </a>
+
+                <!--toggle button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapisble wrapper-->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!--left links-->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded" href="../index.html">About
+                                Me</a></li>
+
+                        <!-- Navbar dropdown -->
+                        <li class="nav-item dropdown py-auto">
+                            <a class="nav-link dropdown-toggle text-light rounded" href="HTML/ya_SPLife.html"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SP Experience
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu fade-down" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../HTML/ya_SPLife.html#DAAA_1A_02">DAAA/1A/02
+                                        &#9825;</a></li>
+
+                                <li><a class="dropdown-item" href="../HTML/ya_SPLife.html#timetable">Timetable</a></li>
+
+                                <li><a class="dropdown-item" href="../HTML/ya_SPLife.html#favFC">Favorite Food
+                                        Courts</a></li>
+
+                                <li><a class="dropdown-item" href="../HTML/ya_SPLife.html#CCA">My CCAs</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li><a class="dropdown-item" href="../HTML/ya_SPLife.html#SOC_Diplomas">SOC Diplomas</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded"
+                                href="../HTML/ya_careerProspects.html">Career Prospects</a></li>
+
+                        <li class="nav-item py-auto"><a class="nav-link text-light rounded"
+                                href="../HTML/ya_feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Background Header Image-->
+        <div id="headerImage" class="mt-4 p-5">
+            <div class="text-center">
+                <p
+                    class="d-inline-flex border border-danger border-4 rounded-circle p-5 my-4 bg-light fs-3 fw-bold text-success">
+                    "With SP, It's So Possible"</p>
+                <p class="lead text-light">- - - - - - - - - - - - - - - - - - - - - - - -</p>
+                <a class="btn btn-lg btn-light fw-bold text-success" href="#SP">Let's Explore SP!</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Section about Countdown & my Class-->
+    <section id="SP">
+        <div id="DAAA_1A_02">
+            <p id="typingEffect" class="h1 text-uppercase text-danger fw-bold text-center mb-5 mt-5"></p>
+
+            <!--Countdown to Graduation-->
+            <section id='countdown' class="text-center mb-2 pb-2">
+                <div class="text-uppercase text-danger p-4 rounded">
+                    <p class="fs-4 fw-bold">Count down to Graduation&nbsp;<i class="bi bi-mortarboard-fill"></i></p>
+                    <p class="fw-bold">- 1st March 2025 -</p>
+                </div>
+
+                <!--Countdown Display-->
+                <div class="d-flex justify-content-evenly pt-1">
+                    <div class="time">
+                        <p id='days' class="h2 fw-bold"></p>
+                        <p>Days</p>
+                    </div>
+
+                    <div class="time">
+                        <p id='hours' class="h2 fw-bold"></p>
+                        <p>Hours</p>
+                    </div>
+
+                    <div class="time">
+                        <p id='minutes' class="h2 fw-bold"></p>
+                        <p>Minutes</p>
+                    </div>
+
+                    <div class="time">
+                        <p id='seconds' class="h2 fw-bold"></p>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--About Class-->
+            <div class="container my-auto mb-5">
+                <div class="row p-5 d-flex align-items-center shadow-lg rounded">
+
+                    <!--Image Carousel-->
+                    <div class="col-md-6 img-fluid order-1 mt-3">
+                        <div id="myClass" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="4"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="5"></button>
+                                <button type="button" data-bs-target="#myClass" data-bs-slide-to="6"></button>
+                            </div>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <img src="../Graphics/classPic1.jpeg" alt="First Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">1st Bonding Session</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic2.jpeg" alt="Second Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">Going home together @ 11pm</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic3.jpeg" alt="Third Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">Barbecue Time!</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic4.jpeg" alt="Fourth Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">With Sheryl :D</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic5.jpeg" alt="Fifth Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">1st Class Picture</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic6.jpeg" alt="Sixth Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">CPR Group</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="../Graphics/classPic7.jpeg" alt="Seventh Slide"
+                                        class="m-1 img-fluid">
+                                    <!--Source: myself-->
+                                    <div class="carousel-caption d-none d-md-flex justify-content-center">
+                                        <h5 class="rounded-pill bg-danger p-1">CPR Group</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left & right controls -->
+                            <a class="carousel-control-prev" data-bs-target="#myClass" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+
+                            <a class="carousel-control-next" data-bs-target="#myClass" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Description-->
+                    <div class="col-md-6">
+                        <p class="h1 text-md-start text-center fw-bold text-success pb-1">DAAA/1A/02 &#9825;</p>
+
+                        <p class="lh-sm rounded bg-light p-3">As a small class of only <span
+                                class="badge rounded-pill bg-danger">18 students</span>, it was relatively easy to bond
+                            with
+                            everyone.
+                            Being in DAAA, I'm <strong>thankful</strong> for having classmates that are extremely
+                            helpful
+                            despite ongoing competitions.</p>
+
+                        <p class="lh-sm rounded bg-light p-3"><span class="badge rounded-pill bg-danger fs-6">My
+                                Hope</span>
+                            for us is that we'll all make it to Year 3 together & that our characters will
+                            <strong>grow stronger</strong> over the years.
+                            While we learn together, I wish for us to enjoy our remaining teenage years to the fullest
+                            before
+                            adulthood arrives.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section + Table for Timetable-->
+    <section id="timetable" class='alternateBg shadow-lg'>
+        <div class="text-center">
+            <h1 class="badge rounded-pill bg-light text-uppercase text-danger fw-bold text-center p-3 mt-5 mb-4 fs-3">
+                Class Timetable </h1>
+        </div>
+
+        <!--Modules-->
+        <div class="container bg-light rounded-pill py-3 mx-auto">
+            <p class="text-center text-uppercase fs-5">My Modules:</p>
+            <p class="text-center s-6"><small>(Hover over for each module's info)</small></p>
+            <div class="ms-5 d-flex justify-content-center">
+                <div class="row">
+                    <!--tooltips to show info-->
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-warning p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Math is a basic foundation for Computing Courses, we learn Matrices, Linear Transformation, Set Theory, Probability, etc.">Math</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-danger p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Programming, we learnt important concepts like data types, conditional statements, loops, functions, classes, etc.">FOP</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-dark p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Computing, we learn the biology of computers & the mechanisms of computing, such as it's hardwork, networking, Linux, etc.">FOC</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-success p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Front-End Development, we learn HTML, CSS, JavaScript & Boostrap to create interactive webpages">FED</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-primary p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Critical Analytical Thinking, we learn how to apply critical & analytical thinking into world news & issues">CAT</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-primary p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Communication & Proposal, we learn how to write proposals while keeping in mind the Purpose, Context & Audience">CPR</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-info p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="In Education Career Guidance, our personal tutor educated us on the possible careers options to prepare for upon graudation">ECG</button>
+                    </div>
+
+                    <div class="col-md-3 col-4">
+                        <button type="button" class="btn btn-dark p-1 m-1" data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="For Sports for Life, I chose badminton as it was a sport I played often casually, so I wanted to really understand the rules & techniques properly">SFL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Table-->
+        <div class="container p-5">
+            <!--insert table-->
+            <div class="table-responsive">
+                <table class="table table-responsive table-bordered table-light text-center caption-top align-middle">
+                    <caption class="text-light fw-bold">Timetable For Semester 1' 2022/2023</caption>
+                    <!--1st Row, Define Table Head-->
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col" class="bg-danger text-light">Mon</th>
+                            <th scope="col" class="bg-danger text-light">Tue</th>
+                            <th scope="col" class="bg-danger text-light">Wed</th>
+                            <th scope="col" class="bg-danger text-light">Thur</th>
+                            <th scope="col" class="bg-danger text-light">Fri</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!--2nd Row-->
+                        <tr>
+                            <th scope="row">8:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="4" class="table-primary">CAT</td>
+                            <td></td>
+                        </tr>
+
+                        <!--3rd Row-->
+                        <tr>
+                            <th scope="row">8:30</th>
+                            <td rowspan="3" class="table-warning">Math</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--4ht Row-->
+                        <tr>
+                            <th scope="row">9:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--5th Row-->
+                        <tr>
+                            <th scope="row">9:30</th>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="5" class="table-success">FED</td>
+                        </tr>
+
+                        <!--6th Row-->
+                        <tr>
+                            <th scope="row">10:00</th>
+                            <td></td>
+                            <td rowspan="4" class="table-secondary">FOC</td>
+                            <td></td>
+                            <td rowspan="4" class="table-secondary">FOC</td>
+                        </tr>
+
+                        <!--7th Row-->
+                        <tr>
+                            <th scope="row">10:30</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--8th Row-->
+                        <tr>
+                            <th scope="row">11:00</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--9th Row-->
+                        <tr>
+                            <th scope="row">11:30</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--10th Row-->
+                        <tr>
+                            <th scope="row">12:00</th>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="7" class="table-danger">FOP</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--11th Row-->
+                        <tr>
+                            <th scope="row">12:30</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--12th Row-->
+                        <tr>
+                            <th scope="row">13:00</th>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="3" class="table-warning">Math</td>
+                            <td></td>
+                        </tr>
+
+                        <!--13th Row-->
+                        <tr>
+                            <th scope="row">13:30</th>
+                            <td rowspan="4" class="table-info">ECG</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--14th Row-->
+                        <tr>
+                            <th scope="row">14:00</th>
+                            <td rowspan="5" class="table-success">FED</td>
+                            <td rowspan="6" class="table-danger">FOP</td>
+                        </tr>
+
+                        <!--15th Row-->
+                        <tr>
+                            <th scope="row">14:30</th>
+                            <td></td>
+                        </tr>
+
+                        <!--16th Row-->
+                        <tr>
+                            <th scope="row">15:00</th>
+                            <td rowspan="4" class="table-primary">CPR</td>
+                        </tr>
+
+                        <!--17th Row-->
+                        <tr>
+                            <th scope="row">15:30</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--18th Row-->
+                        <tr>
+                            <th scope="row">16:00</th>
+                            <td rowspan="5" class="table-dark">SFL</td>
+                            <td></td>
+                        </tr>
+
+                        <!--19th Row-->
+                        <tr>
+                            <th scope="row">16:30</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--20th Row-->
+                        <tr>
+                            <th scope="row">17:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--21st Row-->
+                        <tr>
+                            <th scope="row">17:30</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <!--22nd Row-->
+                        <tr>
+                            <th scope="row">18:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="6" class="table-secondary">School Day Ends @ 6pm</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!--End of Table-->
+        </div>
+    </section>
+
+    <!--Section about Fav Food Courts-->
+    <section id="favFC" class='py-5 shadow-lg'>
+        <h1 class="text-uppercase text-danger fw-bold text-center py-5">Favorite SP Food Courts</h1>
+        <div class="row px-5">
+
+            <div class="col-md-6 col-lg-4">
+                <p class="h5 text-center bg-light fw-bold w-25 rounded-pill">FC2</p>
+                <!--Figure Box-->
+                <figure class="figure">
+                    <img src="../Graphics/food2.jpeg" class="figure-img img-fluid rounded" alt="...">
+                    <!--Source: myself-->
+                    <figcaption class="figure-caption text-center fw-bold">Mixed Vegetable Rice Meal</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <p class="h5 text-center bg-light fw-bold w-25 rounded-pill">FC4</p>
+                <!--Figure Box-->
+                <figure class="figure">
+                    <img src="../Graphics/food3.jpeg" class="figure-img img-fluid rounded" alt="...">
+                    <!--Source: myself-->
+                    <figcaption class="figure-caption text-center fw-bold">KBBQ Chicken Hot Plate</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mx-md-auto">
+                <p class="h5 text-center bg-light fw-bold w-25 rounded-pill">FC5</p>
+                <!--Figure Box-->
+                <figure class="figure">
+                    <img src="../Graphics/food1.jpeg" class="figure-img img-fluid rounded" alt="...">
+                    <!--Source: myself-->
+                    <figcaption class="figure-caption text-center fw-bold">Teriyakyi Chicken Bowl</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--Section about CCAs-->
+    <section id="CCA" class='px-5 alternateBg shadow-lg pt-5 pb-5'>
+        <h1 class="text-uppercase text-danger fw-bold text-center py-3">My CCAs</h1>
+        <!--Intro Para-->
+        <div class="alert alert-light text-center text-dark" role="alert">
+            CCA provides <strong>holistic education</strong> to students,
+            <br>hence I joined these CCAs to make my SP life more <strong>meaningful</strong> &
+            <strong>fulfilling</strong>
+        </div>
+
+        <!--My CCAs-->
+        <div class="row mt-4">
+            <!--1st CAA-->
+            <div class="col-lg-6">
+                <p class="h5 text-center text-light bg-success w-50 rounded-pill p-1">1. Welfare Service Club</p>
+                <!--CCA Photo-->
+                <img src="../Graphics/ccaWSC.png" alt="WSCPhoto" class="img-fluid pb-4">
+                <!--Source: Welfare Service Club Instagram
+                        URL of Instagram Post:https://www.instagram.com/p/CdSgfH9p0S3/
+                    -->
+
+                <!-- CCA Information-->
+                <p class="bg-light rouneded p-3"><strong>Volunteerism</strong> has been an area I wanted to venture more
+                    into after
+                    doing sports & photography in my primary & secondary school respectively.
+                    <br><br>Hence, this club provided a platform for me to participate in volunteering events actively.
+                </p>
+
+                <a class="btn btn-outline-danger btn-floating" href="https://www.instagram.com/sp_wsc/" role="button"
+                    target="blank">> learn more</a>
+            </div>
+
+            <!--2nd CCA-->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <p class="h5 text-center text-light bg-success w-50 rounded-pill p-1">2. School of Computing Club</p>
+                <!--CCA Photo-->
+                <img src="../Graphics/ccaSOCC.png" alt="SOCCPhoto" class="img-fluid pb-4">
+                <!--Source: SOCC Photoshoot-->
+
+                <!-- CCA Information-->
+                <p class="bg-light rouneded p-3">Apart from Volunteerism, I also wanted to grow my <strong>leadership
+                        skills</strong> in SP, while also meeting new people in SOC to <strong>widen my social
+                        circle</strong>.
+                    <br><br>SOCC was the perfect choice as it's main aim was to bring together the SOC students by
+                    hosting events to have them enjoy their time in SP.
+                    <br><br>Hence I signed up for SOCC's Sub-Committee Recruit drive
+                    & got accpeted to be part of their <strong>Secretary-Treasurer Sub-Com</strong>!
+                </p>
+                <a class="btn btn-outline-danger btn-floating" href="https://www.instagram.com/spsocclub/" role="button"
+                    target="blank">> learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Section about SOC-->
+    <section id="SOC_Diplomas" class='shadow-lg py-5'>
+        <h1 class="text-uppercase text-danger fw-bold text-center py-3">SoC Diploma Courses</h1>
+
+        <!--List for 4 SOC Courses-->
+        <div id="SOC" class="container shadow-lg rounded py-5">
+            <!--About DCITP-->
+            <div class="container row text-center p-2 mx-auto">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <img class="img-fluid" src="../Graphics/DCITP_logo.png" alt="DCITP">
+                    <!--Source of DCITP Logo: Singapore Polytechnic
+                    URL:https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview
+                    -->
+                </div>
+
+                <div class="col-md-9 bg-light rounded p-2">
+                    <p class="diploma h3 fw-bold">Diploma in Common Information Technology Programme<br>(S32)</p>
+                    <p><br>A <strong>semester long programme</strong>
+                        aimed to provide students with a <br><em>broad introduction to the Infocomm Landscape &
+                            <br>insights to the various different career paths in the IT industry.</em>
+                        <br><br>Allows students to make informed decision <br>when selecting one out of the three SOC
+                        diploma courses to pursue:
+                        <br><strong>DIT, DISM or DAAA.</strong>
+                    </p>
+                    <p class="h5"><span class="badge bg-success">2022 Planned Intake: 165</span></p>
+                    <p class="h5"><span class="badge bg-success">Range of Net 2022 JAE ELR2B2: 3 to 13</span></p>
+                    <a class="btn btn-outline-success btn-floating mt-2"
+                        href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview"
+                        role="button" target="blank">> learn more</a>
+                </div>
+            </div>
+
+            <!--DIT, DISM, DAAA-->
+            <div class="row p-2">
+
+                <!--About DIT-->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="bg-light rounded p-2 text-center">
+                        <div class="">
+                            <img class="img-fluid w-50" src="../Graphics/DIT_logo.png" alt="DIT">
+                            <!--Source of DCITP Logo: Singapore Polytechnic
+                        URL:https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview
+                        -->
+                        </div>
+
+                        <p class="diploma h3 fw-bold">Diploma in Infocomm Technology<br>(S69)</p>
+                        <p>Focuses on Software & Applications development with 3 specialist tracks:
+                            <br><em>Software Development</em>, <em>User Experience (UX)</em> & <em>Immersive
+                                Simulation</em>
+                            to improve user experience. <br><br><strong>Future Careers</strong>:
+                            <br><em>UX Designer, UI Designer, Software Engineer, etc.</em>
+                        </p>
+                        <p class="h5"><span class="badge bg-primary">2022 Planned Intake: 160</span></p>
+                        <p class="h5"><span class="badge bg-primary">Range of Net 2022 JAE ELR2B2: 4 to 14</span></p>
+                        <a class="btn btn-outline-primary btn-floating mt-2"
+                            href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology"
+                            role="button" target="blank">> learn more</a>
+                    </div>
+                </div>
+
+                <!--About DISM-->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                    <div class="bg-light rounded p-2 text-center">
+                        <div class="">
+                            <img class="img-fluid w-50" src="../Graphics/DISM_logo.png" alt="DAAA">
+                            <!--Source of DCITP Logo: Singapore Polytechnic
+                        URL:https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview
+                        -->
+                        </div>
+
+                        <p class="diploma h3 fw-bold">Diploma in Infocomm Security Management<br>(S54)</p>
+                        <p>With rise of cycber attakcs, this diploma
+                            aims to cover the areas of <em>security technology, security management,
+                                information technology, law & teamwork & communications</em> to prepare students
+                            entering
+                            the cycber industry.
+                            <br><br><strong>Future Careers</strong>:
+                            <br><em>Forensic Investigator, Security Engineer, Cyber Risk Analyst, etc.</em>
+                        </p>
+                        <p class="h5"><span class="badge bg-warning text-dark">2022 Planned Intake: 120</span></p>
+                        <p class="h5"><span class="badge bg-warning text-dark">Range of Net 2022 JAE ELR2B2: 4 to
+                                11</span></p>
+                        <a class="btn btn-outline-warning btn-floating mt-2"
+                            href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management"
+                            role="button" target="blank">> learn more</a>
+                    </div>
+                </div>
+
+                <!--About DAAA-->
+                <div class="col-sm-12 col-md-6 col-lg-4 mx-md-auto">
+                    <div class="bg-light rounded p-2 text-center">
+                        <div class="">
+                            <img class="img-fluid w-50" src="../Graphics/DAAA_logo.png" alt="DAAA">
+                            <!--Source of DAAA Logo: Singapore Polytechnic
+                            URL:https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview
+                            -->
+                        </div>
+
+                        <p class="diploma h3 fw-bold">Diploma in Appiled AI & Analytics<br>(S30)</p>
+                        <p>Aims to teach students to apply AI & big data to solve current solutions across industries,
+                            such as <em>finance, information technology & commerce</em> to support the rising demand in
+                            AI-related roles & skills.
+                            <br><br><strong>Future Careers</strong>:
+                            <br><em>Data Analyst, Data Scientist, Business Intelligence Specialist, etc.</em>
+                        </p>
+                        <p class="h5"><span class="badge bg-danger">2022 Planned Intake: 80</span></p>
+                        <p class="h5"><span class="badge bg-danger">Range of Net 2022 JAE ELR2B2: 3 to 8</span></p>
+                        <a class="btn btn-outline-danger btn-floating mt-2"
+                            href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview"
+                            role="button" target="blank">> learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Return to Top-->
+    <div class="container">
+        <div class="fixed-bottom m-4">
+            <a href="#top" class="bg-light rounded-circle p-2 d-block" id="return">
+                <!--arrow up SVG for icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!--Horizontal footer-->
+    <footer class="bg-danger text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <h2 class="h6 mb-4 fw-bolder text-uppercase">Contact Information:</h2>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="mailto:yadanarraung27@gmail.com" role="button" target="blank"><i class="bi bi-google"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://www.linkedin.com/in/yadanar-aung-0b952323a/" role="button" target="blank"><i
+                        class="bi bi-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://github.com/rosiecrescent" role="button" target="blank"><i
+                        class="bi bi-github"></i></a>
+
+                <!-- Discord -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://discordapp.com/users/419120467463634955/" role="button" target="blank"><i
+                        class="bi bi-discord"></i></a>
+
+                <!-- Telegram -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2" href="https://t.me/ydnrvely"
+                    role="button" target="blank"><i class="bi bi-telegram"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle border-2"
+                    href="https://www.instagram.com/ydnrvely" role="button" target="blank"><i
+                        class="bi bi-instagram"></i></a>
+            </section>
+        </div>
+
+        <p>
+            <i class="btn btn-outline-light bi bi-telephone me-4 mb-2" onclick="copyPhoneNumber()"> +65 9296 4443</i>
+            <a class='btn btn-outline-light mb-2' href="mailto:yadanar.22@ichat.sp.edu.sg">
+                <i class="bi bi-microsoft-teams mb-2">yadanar.22&#64;ichat.sp.edu.sg</i>
+            </a>
+        </p>
+
+        <!-- Copyright -->
+        <div id="copyright" class="p-3">
+            <p class="mb-0 text-uppercase"> &#169; 2022 Yadanar Aung</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
